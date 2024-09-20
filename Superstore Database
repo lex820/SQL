@@ -1,0 +1,16 @@
+-- Write a SQL query that orders the items by price.
+SELECT item_name, price
+FROM superstore
+ORDER BY price;
+-- Write your own SQL query that will show a statistic about the item prices.
+SELECT Max(price), category
+FROM superstore
+WHERE category = 'Furnishings';
+-- Write your own SQL query that will show a statistic about the price for items in the category of "Kitchen Supplies".
+SELECT MIN(price), category
+FROM superstore 
+WHERE category = 'Kitchen Supplies';
+-- How many Wireless Earbuds are in stock?
+SELECT (stock_quantity), item_name
+FROM superstore
+WHERE item_name = 'Wireless Earbuds';
